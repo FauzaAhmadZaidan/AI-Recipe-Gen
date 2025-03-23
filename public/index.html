@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekomendasi Resep Masakan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Rekomendasi Resep Masakan</h1>
+    <p>Masukkan bahan yang ada, dapatkan resep lezat!</p>
+  </header>
+  <div class="container">
+    <form id="recipe-form" class="input-form">
+      <label for="ingredients">Masukkan Bahan (pakai bahasa inggris, pisahkan dengan koma jika lebih dari satu bahan):</label>
+      <input type="text" id="ingredients" placeholder="contoh: chicken, tomato, garlic" required>
+      <button type="submit">Cari Resep</button>
+    </form>
+    <div id="result" class="result-container">
+      <h2>Hasil Resep</h2>
+      <div id="recipe-output" class="recipe-card"></div>
+      <div id="loading" class="loading">Memuat resep...</div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2025 Recipe AI - Dibuat dengan ❤️ oleh Informatika</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
